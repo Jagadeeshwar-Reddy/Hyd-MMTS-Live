@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13CBB9E519784B2400BF5424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9E419784B2400BF5424 /* main.m */; };
+		13CBB9E819784B2400BF5424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9E719784B2400BF5424 /* AppDelegate.m */; };
+		13CBB9EB19784B2400BF5424 /* HydMMTSLive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9E919784B2400BF5424 /* HydMMTSLive.xcdatamodeld */; };
+		13CBB9ED19784B2400BF5424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CBB9EC19784B2400BF5424 /* Images.xcassets */; };
+		13CBB9F919784B2400BF5424 /* HydMMTSLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9F819784B2400BF5424 /* HydMMTSLiveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13CBB9F319784B2400BF5424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CBB9D719784B2400BF5424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CBB9DE19784B2400BF5424;
+			remoteInfo = HydMMTSLive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13CBB9DF19784B2400BF5424 /* HydMMTSLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydMMTSLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CBB9E319784B2400BF5424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CBB9E419784B2400BF5424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13CBB9E619784B2400BF5424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13CBB9E719784B2400BF5424 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13CBB9EA19784B2400BF5424 /* HydMMTSLive.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HydMMTSLive.xcdatamodel; sourceTree = "<group>"; };
+		13CBB9EC19784B2400BF5424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		13CBB9F219784B2400BF5424 /* HydMMTSLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydMMTSLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CBB9F719784B2400BF5424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CBB9F819784B2400BF5424 /* HydMMTSLiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydMMTSLiveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13CBB9DC19784B2400BF5424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CBB9EF19784B2400BF5424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13CBB9D619784B2400BF5424 = {
+			isa = PBXGroup;
+			children = (
+				13CBB9E119784B2400BF5424 /* HydMMTSLive */,
+				13CBB9F519784B2400BF5424 /* HydMMTSLiveTests */,
+				13CBB9E019784B2400BF5424 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13CBB9E019784B2400BF5424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13CBB9DF19784B2400BF5424 /* HydMMTSLive.app */,
+				13CBB9F219784B2400BF5424 /* HydMMTSLiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13CBB9E119784B2400BF5424 /* HydMMTSLive */ = {
+			isa = PBXGroup;
+			children = (
+				13CBB9E619784B2400BF5424 /* AppDelegate.h */,
+				13CBB9E719784B2400BF5424 /* AppDelegate.m */,
+				13CBB9EC19784B2400BF5424 /* Images.xcassets */,
+				13CBB9E919784B2400BF5424 /* HydMMTSLive.xcdatamodeld */,
+				13CBB9E219784B2400BF5424 /* Supporting Files */,
+			);
+			path = HydMMTSLive;
+			sourceTree = "<group>";
+		};
+		13CBB9E219784B2400BF5424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13CBB9E319784B2400BF5424 /* Info.plist */,
+				13CBB9E419784B2400BF5424 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13CBB9F519784B2400BF5424 /* HydMMTSLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CBB9F819784B2400BF5424 /* HydMMTSLiveTests.m */,
+				13CBB9F619784B2400BF5424 /* Supporting Files */,
+			);
+			path = HydMMTSLiveTests;
+			sourceTree = "<group>";
+		};
+		13CBB9F619784B2400BF5424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13CBB9F719784B2400BF5424 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13CBB9DE19784B2400BF5424 /* HydMMTSLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CBB9FC19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLive" */;
+			buildPhases = (
+				13CBB9DB19784B2400BF5424 /* Sources */,
+				13CBB9DC19784B2400BF5424 /* Frameworks */,
+				13CBB9DD19784B2400BF5424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HydMMTSLive;
+			productName = HydMMTSLive;
+			productReference = 13CBB9DF19784B2400BF5424 /* HydMMTSLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13CBB9F119784B2400BF5424 /* HydMMTSLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CBB9FF19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLiveTests" */;
+			buildPhases = (
+				13CBB9EE19784B2400BF5424 /* Sources */,
+				13CBB9EF19784B2400BF5424 /* Frameworks */,
+				13CBB9F019784B2400BF5424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CBB9F419784B2400BF5424 /* PBXTargetDependency */,
+			);
+			name = HydMMTSLiveTests;
+			productName = HydMMTSLiveTests;
+			productReference = 13CBB9F219784B2400BF5424 /* HydMMTSLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13CBB9D719784B2400BF5424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = TheAteam;
+				TargetAttributes = {
+					13CBB9DE19784B2400BF5424 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					13CBB9F119784B2400BF5424 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 13CBB9DE19784B2400BF5424;
+					};
+				};
+			};
+			buildConfigurationList = 13CBB9DA19784B2400BF5424 /* Build configuration list for PBXProject "HydMMTSLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13CBB9D619784B2400BF5424;
+			productRefGroup = 13CBB9E019784B2400BF5424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13CBB9DE19784B2400BF5424 /* HydMMTSLive */,
+				13CBB9F119784B2400BF5424 /* HydMMTSLiveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13CBB9DD19784B2400BF5424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CBB9ED19784B2400BF5424 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CBB9F019784B2400BF5424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13CBB9DB19784B2400BF5424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CBB9E819784B2400BF5424 /* AppDelegate.m in Sources */,
+				13CBB9EB19784B2400BF5424 /* HydMMTSLive.xcdatamodeld in Sources */,
+				13CBB9E519784B2400BF5424 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CBB9EE19784B2400BF5424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CBB9F919784B2400BF5424 /* HydMMTSLiveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13CBB9F419784B2400BF5424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CBB9DE19784B2400BF5424 /* HydMMTSLive */;
+			targetProxy = 13CBB9F319784B2400BF5424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13CBB9FA19784B2400BF5424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13CBB9FB19784B2400BF5424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13CBB9FD19784B2400BF5424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HydMMTSLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13CBB9FE19784B2400BF5424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HydMMTSLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		13CBBA0019784B2400BF5424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HydMMTSLive.app/HydMMTSLive";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HydMMTSLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		13CBBA0119784B2400BF5424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HydMMTSLive.app/HydMMTSLive";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HydMMTSLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13CBB9DA19784B2400BF5424 /* Build configuration list for PBXProject "HydMMTSLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CBB9FA19784B2400BF5424 /* Debug */,
+				13CBB9FB19784B2400BF5424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CBB9FC19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CBB9FD19784B2400BF5424 /* Debug */,
+				13CBB9FE19784B2400BF5424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13CBB9FF19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CBBA0019784B2400BF5424 /* Debug */,
+				13CBBA0119784B2400BF5424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13CBB9E919784B2400BF5424 /* HydMMTSLive.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13CBB9EA19784B2400BF5424 /* HydMMTSLive.xcdatamodel */,
+			);
+			currentVersion = 13CBB9EA19784B2400BF5424 /* HydMMTSLive.xcdatamodel */;
+			path = HydMMTSLive.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 13CBB9D719784B2400BF5424 /* Project object */;
+}
