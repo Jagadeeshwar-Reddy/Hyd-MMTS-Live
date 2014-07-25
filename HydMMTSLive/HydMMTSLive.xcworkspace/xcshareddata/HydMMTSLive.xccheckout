@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92D8E07B-09AA-485D-A76C-A46208D570CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HydMMTSLive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F4C4FA55-5D61-461E-97DA-1EFD03307FC3</key>
+		<string>https://github.com/Jagadeeshwar-Reddy/Hyd-MMTS-Live.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HydMMTSLive/HydMMTSLive.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F4C4FA55-5D61-461E-97DA-1EFD03307FC3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Jagadeeshwar-Reddy/Hyd-MMTS-Live.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F4C4FA55-5D61-461E-97DA-1EFD03307FC3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4C4FA55-5D61-461E-97DA-1EFD03307FC3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hyd-MMTS-Live</string>
+		</dict>
+	</array>
+</dict>
+</plist>

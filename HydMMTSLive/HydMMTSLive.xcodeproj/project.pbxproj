@@ -12,6 +12,8 @@
 		13CBB9EB19784B2400BF5424 /* HydMMTSLive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9E919784B2400BF5424 /* HydMMTSLive.xcdatamodeld */; };
 		13CBB9ED19784B2400BF5424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CBB9EC19784B2400BF5424 /* Images.xcassets */; };
 		13CBB9F919784B2400BF5424 /* HydMMTSLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CBB9F819784B2400BF5424 /* HydMMTSLiveTests.m */; };
+		605D1AE5D3B14D8A9404F96D /* libPods-HydMMTSLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACDBE41B2604FF8BD302799 /* libPods-HydMMTSLive.a */; };
+		D4C45D7819823D350037509E /* ImportantContent in Resources */ = {isa = PBXBuildFile; fileRef = D4C45D7719823D350037509E /* ImportantContent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		13CBB9F219784B2400BF5424 /* HydMMTSLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydMMTSLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CBB9F719784B2400BF5424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CBB9F819784B2400BF5424 /* HydMMTSLiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydMMTSLiveTests.m; sourceTree = "<group>"; };
+		4ACDBE41B2604FF8BD302799 /* libPods-HydMMTSLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HydMMTSLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8690FE580C364E1CA78F4CC6 /* Pods-HydMMTSLive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HydMMTSLive.xcconfig"; path = "Pods/Pods-HydMMTSLive.xcconfig"; sourceTree = "<group>"; };
+		D4C45D7719823D350037509E /* ImportantContent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ImportantContent; path = HydMMTSLive/Resources/ImportantContent; sourceTree = "<group>"; };
+		D4C7304F1982B3F2001930B4 /* MMTS Timetable   MMTS Train Timings   Hyderabad local train time table.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MMTS Timetable   MMTS Train Timings   Hyderabad local train time table.xls"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605D1AE5D3B14D8A9404F96D /* libPods-HydMMTSLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +65,13 @@
 		13CBB9D619784B2400BF5424 = {
 			isa = PBXGroup;
 			children = (
+				D4C45D7719823D350037509E /* ImportantContent */,
+				D4C7304F1982B3F2001930B4 /* MMTS Timetable   MMTS Train Timings   Hyderabad local train time table.xls */,
 				13CBB9E119784B2400BF5424 /* HydMMTSLive */,
 				13CBB9F519784B2400BF5424 /* HydMMTSLiveTests */,
 				13CBB9E019784B2400BF5424 /* Products */,
+				8690FE580C364E1CA78F4CC6 /* Pods-HydMMTSLive.xcconfig */,
+				F903153814A34251AED87FA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +122,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F903153814A34251AED87FA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACDBE41B2604FF8BD302799 /* libPods-HydMMTSLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13CBB9FC19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLive" */;
 			buildPhases = (
+				635B5F19F21A448DA55E3077 /* Check Pods Manifest.lock */,
 				13CBB9DB19784B2400BF5424 /* Sources */,
 				13CBB9DC19784B2400BF5424 /* Frameworks */,
 				13CBB9DD19784B2400BF5424 /* Resources */,
+				9ACE056573D840ED9292AF8E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CBB9ED19784B2400BF5424 /* Images.xcassets in Resources */,
+				D4C45D7819823D350037509E /* ImportantContent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +224,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		635B5F19F21A448DA55E3077 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9ACE056573D840ED9292AF8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-HydMMTSLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13CBB9DB19784B2400BF5424 /* Sources */ = {
@@ -313,6 +368,7 @@
 		};
 		13CBB9FD19784B2400BF5424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8690FE580C364E1CA78F4CC6 /* Pods-HydMMTSLive.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -324,6 +380,7 @@
 		};
 		13CBB9FE19784B2400BF5424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8690FE580C364E1CA78F4CC6 /* Pods-HydMMTSLive.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +445,7 @@
 				13CBB9FE19784B2400BF5424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13CBB9FF19784B2400BF5424 /* Build configuration list for PBXNativeTarget "HydMMTSLiveTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +454,7 @@
 				13CBBA0119784B2400BF5424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
