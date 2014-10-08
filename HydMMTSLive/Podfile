@@ -5,6 +5,8 @@ target "HydMMTSLive" do
 
 pod 'AFNetworking'
 pod 'Canvas', '~> 0.1'
+pod 'FlatUIKit'
+
 end
 
 target "HydMMTSLiveTests" do
