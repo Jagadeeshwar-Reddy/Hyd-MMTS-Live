@@ -60,7 +60,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LiveStatusCell" forIndexPath:indexPath];
-    
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"LiveStatusCell"];
+    }
+
     // Configure the cell...
     //{"Trainno":"47129","Station":"Bharatnagar"}
     NSDictionary *currentLocation = self.currentLocationsOfTrains[indexPath.row];

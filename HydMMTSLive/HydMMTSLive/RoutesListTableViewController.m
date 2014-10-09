@@ -8,6 +8,13 @@
 
 #import "RoutesListTableViewController.h"
 #import "LiveStatusForSelectedRouteTableViewController.h"
+#import "RouteCell.h"
+
+#define RGB(r, g, b) \
+[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBA(r, g, b, a) \
+[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
 
 @interface RoutesListTableViewController ()
 @property (nonatomic, retain) NSMutableArray *routes;
@@ -32,6 +39,9 @@
     [self.routes addObject:@{@"Origin":@"HYD", @"Destination":@"FM", @"RouteName":@"HF"}];
     [self.routes addObject:@{@"Origin":@"FM", @"Destination":@"HYD", @"RouteName":@"FH"}];
     
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"RouteCell"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,15 +65,51 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RouteCell" forIndexPath:indexPath];
+    static NSString *simpleTableIdentifier = @"RouteCellIdentifier";
+    
+    RouteCell *cell = (RouteCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RouteCell" forIndexPath:indexPath];
     
     // Configure the cell...
     NSDictionary *route = [self.routes objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text =[NSString stringWithFormat:@"%@ -> %@",route[@"Origin"],route[@"Destination"]];
+
+    cell.lbl_origin.text = route[@"Origin"];
+    cell.lbl_destination.text = route[@"Destination"];
+
+    //cell.textLabel.text =[NSString stringWithFormat:@"%@ -> %@",route[@"Origin"],route[@"Destination"]];
     return cell;
 }
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    //255,99,71
+    switch (indexPath.row) {
+        case 0:
+            cell.contentView.backgroundColor=RGB(255, 99, 71);
+            break;
+        case 1:
+            cell.contentView.backgroundColor=RGB(64, 224, 208);
+            break;
+        case 2:
+            cell.contentView.backgroundColor=RGB(238, 130, 238);
+            break;
+        case 3:
+            cell.contentView.backgroundColor=RGB(135, 206, 250);
+            break;
+        case 4:
+            cell.contentView.backgroundColor=RGB(60, 179, 113);
+            break;
+        case 5:
+            cell.contentView.backgroundColor=RGB(165, 42, 42);
+            break;
 
+        default:
+            break;
+    }
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70.0f;
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *route = [self.routes objectAtIndex:indexPath.row];
     LiveStatusForSelectedRouteTableViewController *liveStatusView = [self.storyboard instantiateViewControllerWithIdentifier:@"LiveStatusView"];
