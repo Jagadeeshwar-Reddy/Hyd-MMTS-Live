@@ -7,7 +7,8 @@
 //
 
 #import "LiveStatusForSelectedRouteTableViewController.h"
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface LiveStatusForSelectedRouteTableViewController ()
 @property (nonatomic, retain) NSMutableArray *currentLocationsOfTrains;
@@ -26,18 +27,27 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.currentLocationsOfTrains = [NSMutableArray array];
-    
+	
+	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+	[hud setLabelText:@"Loading..."];
+	
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://122.252.246.246:8081/" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    AFHTTPRequestOperation *operation = [manager GET:@"http://122.252.246.246:8081/" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         
         [self.currentLocationsOfTrains addObjectsFromArray:responseObject[self.routeIdentifier]];
         [self.tableView reloadData];
+	    
+	    [hud hide:YES afterDelay:0.2];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
-    }];
+	    [hud hide:YES afterDelay:0.2];
 
+    }];
+	[operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+		NSLog(@"%lld",totalBytesRead);
+	}];
 }
 
 - (void)didReceiveMemoryWarning {

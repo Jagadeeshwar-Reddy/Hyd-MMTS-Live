@@ -6,6 +6,7 @@ target "HydMMTSLive" do
 pod 'AFNetworking'
 pod 'Canvas', '~> 0.1'
 pod 'FlatUIKit'
+pod 'MBProgressHUD', '~> 0.9'
 
 end
 
